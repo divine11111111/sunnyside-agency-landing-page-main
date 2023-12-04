@@ -12,6 +12,8 @@
          href="./images/favicon-32x32.png"
       />
 
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
       <title>Frontend Mentor | Sunnyside agency landing page</title>
 
       <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -26,7 +28,7 @@
       </style>
    </head>
    <body>
-            <nav class="page-nav">
+            <nav data-aos="fade-down" class="page-nav">
          <div class="head__nav-bar">
             <h3 class="page-logo">sunnyside</h3>
             <ul class="nav-menu">
@@ -62,7 +64,7 @@
 
 
             <section class="grid section1">
-         <div class="left__section1">
+         <div class="left__section1" data-aos="fade-up">
             <h2 class="sec__head">Transform your brand</h2>
             <p class="sec__body sec__body-ash">
                We are a full-service creative agency specializing in helping
@@ -73,7 +75,7 @@
             <a href="#" class="sec__link">LEARN MORE</a>
          </div>
 
-         <div class="right__section1">
+         <div class="right__section1" data-aos="fade-left">
             <img
                src="images/desktop/image-transform.jpg"
                alt="section1-image"
@@ -83,7 +85,7 @@
       </section>
 
       <section class="grid section2">
-         <div class="left__section2">
+         <div class="left__section2" data-aos="fade-right">
             <img
                src="images/desktop/image-stand-out.jpg"
                alt="section2-image"
@@ -91,7 +93,7 @@
             />
          </div>
 
-         <div class="right__section2">
+         <div class="right__section2" data-aos="fade-up">
             <h2 class="sec__head">Stand out to the right audience</h2>
             <p class="sec__body sec__body-ash">
                Using a collaborative formula of designers, researchers,
@@ -103,7 +105,7 @@
       </section>
 
       <section class="grid section3">
-         <div class="left__section3">
+         <div class="left__section3" data-aos="fade-right">
             <!--             
             <img src="images/desktop/image-graphic-design.jpg" alt="section3-image" class="sec__img"> -->
             <div class="sec3-body sec3__left-body">
@@ -116,7 +118,7 @@
             </div>
          </div>
 
-         <div class="right__section3">
+         <div class="right__section3" data-aos="fade-left">
             <!-- <img src="images/desktop/image-photography.jpg" alt="section3-image" class="sec__img"> -->
 
             <div class="sec3-body sec3__right-body">
@@ -131,8 +133,8 @@
 
       
       <section class="testimonials-container">
-   <h2 class="testimonial__head">Client testimonials</h2>
-   <div class="testimonials">
+   <h2 class="testimonial__head" data-aos="flip-right">Client testimonials</h2>
+   <div class="testimonials" data-aos="fade-down-right">
       <div class="text-con">
          <img src="images/image-emily.jpg" alt="Emily R." class="con__img" />
          <p class="con__text">
@@ -169,16 +171,16 @@
 
 
       <section class="gallery-section">
-         <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milk-bottle" class="last-sec__img">
-         <img src="images/desktop/image-gallery-orange.jpg" alt="orange in bowl" class="last-sec__img">
-         <img src="images/desktop/image-gallery-cone.jpg" alt="ice-cream cone" class="last-sec__img">
-         <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes" class="last-sec__img">
+         <img data-aos="fade-up" src="images/desktop/image-gallery-milkbottles.jpg" alt="milk-bottle" class="last-sec__img">
+         <img data-aos="fade-down" src="images/desktop/image-gallery-orange.jpg" alt="orange in bowl" class="last-sec__img">
+         <img data-aos="fade-up" src="images/desktop/image-gallery-cone.jpg" alt="ice-cream cone" class="last-sec__img">
+         <img data-aos="fade-down" src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes" class="last-sec__img">
       </section>
 
 
 
       
-      <footer class="footer-section">
+      <footer class="footer-section" data-aos="fade-up">
          <h3 class="footer-logo">Sunnyside</h3>
             <ul class="footer-inner__links">
                <li><a href="#" class="footer-color">About</a></li>
@@ -212,4 +214,8 @@
    </body>
 
    <script src="script.js"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
    </html>
