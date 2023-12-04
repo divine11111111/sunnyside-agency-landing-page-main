@@ -457,3 +457,21 @@ nav .menu {
       margin-top: 2rem;
    }
 }
+
+/* --------lest component------- */
+
+.gallery-section {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}
+
+.last-sec__img {
+   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+   .gallery-section {
+      grid-template-columns: 1fr;
+   }
+}
